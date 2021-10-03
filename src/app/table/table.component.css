@@ -1,0 +1,62 @@
+
+.container{
+  padding-left: 1rem;
+  padding-top: 2rem;
+  height: 95%;
+}
+
+.table-header{
+  display: flex;
+}
+
+
+.table-header .table-action-btns{
+  margin-left: 40rem;
+  display: flex;
+}
+
+.table-action-btns button{
+  margin-right: 1rem;
+  margin-bottom: 1rem;
+}
+
+.mat-card{
+  min-height: 88%;
+  box-shadow: 0 3px 10px rgb(0 0 0 / 0.2);
+}
+
+
+table {
+    font-family: arial, sans-serif;
+    border-collapse: collapse;
+    width: 100%;
+  }
+
+  th{
+    background-color: blue;
+    color: white;
+  }
+  
+  td, th {
+    border: 1px solid #dddddd;
+    text-align: left;
+    padding: 8px;
+  }
+  
+  tr:nth-child(even) {
+    background-color: #dddddd;
+  }
+
+  tr.selected{
+    background-color: blue;
+    color: white;
+  }
+
+  mat-card-footer{
+    padding-top: 5.5rem;
+  
+  }
+
+  mat-paginator {
+    background-color: lightgray;
+  }

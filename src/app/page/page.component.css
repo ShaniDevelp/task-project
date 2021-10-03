@@ -1,0 +1,17 @@
+.container{
+    display: flex;
+    height: 100%;
+}
+
+.table-component{
+    width: 70%;
+}
+
+
+.form-component{
+    width: 30%;
+}
+
+.shrink{
+    width: 70%;
+}

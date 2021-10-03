@@ -1,0 +1,56 @@
+.container{
+    padding-top: 2rem;
+    padding-left: 1rem;
+    padding-right: 1rem;
+    height: 93%;
+}
+
+.mat-card{
+    height: 90%;
+    box-shadow: 0 3px 10px rgb(0 0 0 / 0.2);
+}
+
+.heading{
+    color: black;
+}
+
+.invalid-feedback{
+    position: absolute;
+    top: 2rem;
+    color: red;
+    margin-top: 1rem;
+}
+
+form .mat-form-field:first-child {
+    position: relative;
+}
+
+form .mat-form-field:nth-child(2) {
+    margin-top: 2rem;  
+}
+
+form .mat-form-field:nth-child(3) {
+    margin-top: 2rem;  
+}
+
+form .mat-form-field:nth-child(4) {
+    margin-top: 2rem;  
+}
+
+form .date{
+    margin-top: 1rem; 
+}
+
+form > .mat-form-field {
+    width: 20rem;
+    height: 1rem;
+}
+
+form .mat-radio-button {
+    margin-left: 1.5rem;
+    margin-top: 2rem;
+}
+
+button{
+    margin: 13rem 0 0 17rem;
+}

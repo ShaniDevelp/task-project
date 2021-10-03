@@ -1,0 +1,41 @@
+<div class="container" >
+    <mat-card>
+        <mat-card-header>
+            <h2>{{formTitle}}</h2>
+        </mat-card-header>
+        <mat-card-content>
+            <form [formGroup]=" FormData" autocomplete="off" (ngSubmit)='saveData()'>
+                <mat-form-field  appearance="outline">
+                    <mat-label >Name:</mat-label>
+                    <input matInput=''   type="text" formControlName="name" autocomplete='nope' placeholder="name">
+                    <div *ngIf="f.name.errors && f.name.touched" class="invalid-feedback">
+                        <div *ngIf="f.name.errors.required">*Name is required</div>
+                    </div>
+                </mat-form-field>
+
+                <mat-form-field appearance="outline">
+                    <mat-label >Age: </mat-label>
+                    <input matInput='' type="number" formControlName="age" placeholder=20>
+                </mat-form-field>
+                
+                <mat-form-field  appearance="outline">
+                    <mat-label >Education: </mat-label>
+                    <input matInput=''   type="text" formControlName="education">
+                </mat-form-field>
+                
+                <mat-radio-group  formControlName="gender">
+                    <mat-radio-button *ngFor='let gender of Genders' [value]="gender" >{{gender}}</mat-radio-button>
+                </mat-radio-group>
+                 
+                <mat-form-field   appearance="outline" class="date" >
+                    <mat-label >Joining Date</mat-label>
+                    <input matInput  [matDatepicker]="picker" formControlName="joiningDate" >
+                    <mat-datepicker-toggle matSuffix [for]="picker"></mat-datepicker-toggle>
+                    <mat-datepicker #picker></mat-datepicker>
+                </mat-form-field>
+                
+                <button mat-raised-button color="primary"  [disabled]="!FormData.valid">Save</button>
+            </form>
+        </mat-card-content>
+    </mat-card>
+</div>

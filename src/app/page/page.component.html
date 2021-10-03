@@ -1,0 +1,8 @@
+<div class="container">
+    <div class="table-component">
+        <app-table (ActiveRow)='onActiveRow($event)' (NewData)='AcceptData($event)' ></app-table>
+    </div>
+    <div class="form-component">
+        <app-form (sendData)='closeform($event)' [row]="row"></app-form>
+    </div>
+</div>
